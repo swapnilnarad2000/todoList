@@ -1,14 +1,84 @@
 body{
 	background: white;
+	font-family: 'Balsamiq Sans', cursive;
 }
 
 #container{
 	border:3px solid gray;
 	width:360px;
-	margin: 0 auto;
+	margin: 100px auto;
+	background: #f7f7f7;
 }
 
+h1{
+background: #00C9FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: black;
+	font-weight: 1;
+	margin:0;
+	padding:10px 20px;
+	text-transform:uppercase;
+	font-size: 24px;
+}
+.fa-plus{
+	float: right;
+}
 .selected{
 	color:gray;
 	text-decoration: line-through;
+}
+
+input{
+	margin: 0;
+	width: 100%;
+	font-size: 18px;
+	background: #f7f7f7;
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box;
+}
+ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+li{
+	background: white;
+	height:40px;
+	line-height: 40px;
+}
+body{
+	background: #c2e59c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+li:nth-child(2n){
+	background: #f7f7f7;
+}
+
+input:focus{
+	background: white;
+	border: 5px solid rgb(89, 182, 91);
+}
+
+.display{
+	display: none;
+}
+
+span{
+	background: rgb(202,52,51);
+	height: 40px;
+	display:inline-block;
+	width: 0px;
+	text-align: center;
+	color: white;
+	margin-right: 10px;
+	transition: 0.2s linear;  
+	opacity: 0;
+}
+
+li:hover span{
+	width: 40px;
+	opacity: 1;
 }
